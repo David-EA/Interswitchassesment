@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="font-6/css/all.css">
+    <title>Interswitch Assesment</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="container--left">
+            <img class="pos-terminal" src="./images/pos_terminal.png" alt="pos_terminal">
+            <br>
+
+            <p>AVAILABLE PAYMENT METHODS</p>
+
+            <div class="fonts">
+                <span style=" font-size:20px;  color:rgb(97, 97, 97); margin-bottom: 10px; margin-left: 180px; height:20px; padding: 5px;">  
+                    <i class="fa-sharp fa-solid fa-qrcode"></i>
+                    <!-- <p >QR</p>  -->
+                </span>
+
+                <span style=" font-size:20px;  color:rgb(97, 97, 97);margin-bottom: 10px; margin-left: 20px; height:20px; padding: 5px;"> 
+                    <i class="fa-solid fa-credit-card"></i>
+                    <!-- <p>CARDS</p> -->
+                </span>
+
+                <span style=" font-size:20px;  color:rgb(97, 97, 97);margin-bottom: 10px; margin-left: 20px; height:20px;  padding: 5px;"> 
+                    <i class="fa-solid fa-mobile fa-rotate-270"></i> 
+                    <!-- <p>USSD</p> -->
+                </span>
+
+                <span style=" font-size:20px; color:rgb(97, 97, 97);margin-bottom: 10px; margin-left: 20px; height:20px; padding: 5px;"> 
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <!-- <p>TRANSFER</p> -->
+                </span>
+
+                <span style=" font-size:20px;  color:rgb(97, 97, 97);margin-bottom: 10px; margin-left: 20px; height:20px; padding: 5px;">  
+                    <i class="fa-solid fa-pager"></i>
+                    <!-- <p>PAYCODE</p> -->
+                </span>
+            </div>
+
+            <div class="f_label">
+                <p>QR</p>
+                <p style="padding-left: 30px;">CARDS</p>
+                <p style="padding-left: 22px;">USSD</p>
+                <p style="padding-left: 20px;">TRANSFER</p>
+                <p style="padding-left: 12px;">PAYCODE</p>
+            </div>
+        </div>
+
+        <div class="container--right">
+            <h2>Your Smart POS is Just a Few Clicks Away</h2>
+            <span style="color: rgb(114, 114, 114); padding-left: 25px;">Let us help you kick-start the journey that's beyond collecting </span><br>
+            <span style="color: rgb(114, 114, 114); padding-left: 94px;"> payments, please share your details here.</span>
+
+            <form id="form" action="/" method="GET">
+
+                <div class="mini-container">
+                    <div>
+                        <P>First Name</P>
+                        <input id="fname" type="text" placeholder="First Name" required>
+                        <span id="fnameerr"></span>
+                    </div>
+                
+
+                    <div style="padding-left: 30px;">
+                        <p>Last Name</p>
+                        <input id="lname" type="text" placeholder="Last Name" required>
+                        <span id="lnameerr"></span>
+                    </div>
+                </div>
+                <br>
+
+                <p>Email Address</p>
+                <input id="email" class="mod" type="text" placeholder="Your Email Address" required>
+                <span id="mailerr"></span>
+                <br>
+                <br>
+                <p>Phone Number</p>
+                <input id="num" class="mod" type="text" placeholder="Phone Number" required>
+                <span id="numerr"></span>
+                <br>
+                <br>
+                <p>Where Do You Sell?</p>
+                <select name="" id="location" required> 
+                    <option value="">-select-</option>
+                    <option value="Alimosho">Alimosho</option>
+                    <option value="Ikeja">Ikeja</option>
+                    <option value="Isolo">Isolo</option>
+                    <option value="Yaba">Yaba</option>
+                </select>
+                <br>
+                <br>
+                <p>Business Type</p>
+                <select name="" id="selectedbusiness" required> 
+                    <option value="">-select-</option>
+                    <option value="jewelry">jewelry</option>
+                    <option value="cosmetics">cosmetics</option>
+                    <option value="clothing">clothing</option>
+                    <option value="shoes">shoes</option>
+                </select>
+                <br>
+                <br>
+
+                <p>Average Monthly Sales/Turnover</p>
+                <select name="" id="sales" required> 
+                    <option value="">-select-</option>
+                    <option value="5000">5,000</option>
+                    <option value="10000">10,000</option>
+                    <option value="20000">20,000</option>
+                    <option value="30000"> 30,000</option>
+                </select>
+                <br>
+                <br>
+                <p>Will you be interested in integrating a Business Management Software</p>
+                <br>
+                <input class="radio" type="radio" id="yes" name="interestinBMS" value="YES" required> 
+                <label for="yes"> Yes</label>
+                <input  class="radio" type="radio" id="no" name="interestinBMS" value="NO" required>
+                <label for="no"> No</label>
+                <br>
+                <br>
+                <br>
+                <input id="checkbox" type="checkbox" required> I <span style="color: #011822; font-weight: bold;">Agree</span> to Quickteller Business' <span style="color: #074379;">Privacy Policy</span>
+                <br>
+
+                <button id="submit" type="submit" value="submit">Submit</button>
+            </form>
+        </div>
+    </div>        
+</body>
+<script src="index .js"></script>
+</html>

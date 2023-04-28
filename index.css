@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+       
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    /* border: 1px solid black; */
+}
+
+/* .container--left{
+    border: 1px solid black;
+} */
+
+ .pos-terminal{
+    position: relative;
+    left: 60px;
+    /* border: 1px solid black; */
+    margin-top: 100px;
+    width: 80%;
+    height: 80%;
+}
+
+.container--left p{
+    color: #00B8DE;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container--left .fonts{
+    display: flex;
+    padding-top: 10px;
+}
+
+
+.container--left .f_label{
+    display: flex;
+    margin-left: 190px;
+}
+
+.container--left .f_label p{
+    color:#00425F;
+    position: relative;
+    bottom: 20px;
+    font-size: 9px;
+}
+
+.container--right{
+    border: 1px solid rgb(114, 114, 114);
+    padding: 20px 40px;
+    margin: 20px 0px;
+    border-radius: 3px;
+}
+
+.container--right h2{
+    padding-top: 20px;
+    color: #00425F;
+    padding-left: 10px;
+}
+
+.container--right p{
+    color: rgb(114, 114, 114);
+    font-size: 14px;
+}
+
+form .mini-container{
+    display: flex;
+    padding-top: 20px;
+}
+
+form .mini-container input{
+    width: 200px;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+
+form .mod{
+    width: 439px;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+
+form select{
+    width: 448px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+
+form button{
+    margin-top: 30px;
+    text-align: center;
+    width: 447px;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    background-color: #0275d8;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 880px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    /* .container--left{
+        height: 500px;
+        padding-top: 0px;
+    }
+
+    .pos-terminal{
+        width: 60%;
+        height: 60%;
+        margin: 0px;
+    }
+    .container--left p{
+        align-items: center;
+    }         
+    
+
+    .container--right{
+        border: none;
+    }
+     .container--right h2{
+        font-size: 22px;
+     } */
+}
